@@ -11,6 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
+
+    
     // Fetch lawyer details
     $lawyerQuery = $conn->prepare("SELECT name, contact_number FROM users WHERE id = ?");
     $lawyerQuery->bind_param("i", $userId);
@@ -41,3 +43,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
     $conn->close();
 }
+
