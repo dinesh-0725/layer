@@ -11,6 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $longitude = trim($_POST['longitude']);
     $login_id = trim($_POST['id']); // Changed variable name to login_id
 
+
+    
+
     // File upload handling
     $image = $_FILES['image'];
     $file_name = null; // Initialize file_name as null
@@ -93,4 +96,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $conn->close();
     }
 }
+
 ?>
