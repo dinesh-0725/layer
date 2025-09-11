@@ -1,4 +1,4 @@
-<?php
+<?ph
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect and sanitize input
     $name = trim($_POST['name']);
@@ -12,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $login_id = trim($_POST['id']); // Changed variable name to login_id
 
 
-    
 
     // File upload handling
     $image = $_FILES['image'];
@@ -98,3 +97,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
+
