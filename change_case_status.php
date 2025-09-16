@@ -10,6 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo json_encode(["status" => "ERROR", "message" => "Connection failed."]);
         exit;
     }
+
+    
     
     // Fetch lawyer details
     $lawyerQuery = $conn->prepare("SELECT name, contact_number FROM users WHERE id = ?");
@@ -41,5 +43,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
     $conn->close();
 }
+
 
 
