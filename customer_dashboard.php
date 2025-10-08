@@ -1,6 +1,12 @@
 <?php
 session_start();
 
+
+
+
+
+
+
 if (isset($_SESSION['user_username'])) {
     // Retrieve the user's email from the session
     $username = $_SESSION['user_username'];
@@ -1097,4 +1103,5 @@ if (isset($_SESSION['user_username'])) {
     header("Location: login.html");
     exit();
 }
+
 ?>
